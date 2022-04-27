@@ -1,0 +1,110 @@
+body {
+    overflow-y: hidden;
+}
+
+.mainbody {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-image: url('back-hot.png');
+}
+
+.subbody {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.search-box {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: rgb(226, 232, 240);
+    text-align: center;
+    border-width: 2px;
+}
+
+.search-box:hover {
+    border-color: rgb(147, 197, 253);
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 800;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.city{
+    font-size: 1.875rem/* 30px */;
+    line-height: 2.25rem/* 36px */;
+    margin-top: 0.5rem/* 8px */;
+    margin-bottom: 0.5rem/* 8px */;
+}
+.date{
+    font-size: 1.25rem/* 20px */;
+    line-height: 1.75rem/* 28px */;
+    margin-top: 0.5rem/* 8px */;
+    margin-bottom: 0.5rem/* 8px */;
+}
+.WeatherZZZ{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 800;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+.temp{
+    font-size: 1.25rem/* 20px */;
+    line-height: 1.75rem/* 28px */;
+    margin-top: 0.5rem/* 8px */;
+    margin-bottom: 0.5rem/* 8px */;
+}
+.weather{
+    font-size: 1.25rem/* 20px */;
+    line-height: 1.75rem/* 28px */;
+    margin-top: 0.5rem/* 8px */;
+    margin-bottom: 0.5rem/* 8px */;
+}
+.hi-low{
+    font-size: 1.25rem/* 20px */;
+    line-height: 1.75rem/* 28px */;
+    margin-top: 0.5rem/* 8px */;
+    margin-bottom: 0.5rem/* 8px */;
+}
+.section2{
+    display: none;
+}
+@media screen and (min-width:768px) {
+    .mainbody {
+        display: none;
+    }
+    .section2{
+        font-size: 3rem/* 48px */;
+        line-height: 1;
+        color: rgb(30, 64, 175);
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem/* 16px */;
+        --tw-space-x-reverse: 0;
+        margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+        margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+    }
+}
